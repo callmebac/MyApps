@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sensor Test</string>
+    <string name="action_settings">Settings</string>
+    <string name="info_text">The sensor information:</string>
+    <string name="start">start</string>
+    <string name="stop">stop</string>
+    <string name="config">config</string>
+    <string name="start_toast">started!</string>
+    <string name="stop_toast">stopped!</string>
+    <string name="next_btn">Next</string>
+    <string name="sensor_accelerometer">accelerometer</string>
+    <string name="sensor_gyroscope">gyroscope</string>
+    <string name="sensor_light">light</string>
+    <string name="sensor_magnetic_field">magnetic field</string>
+    <string name="sensor_orientation">orientation</string>
+    <string name="sensor_pressure">pressure</string>
+    <string name="sensor_proximity">proximity</string>
+    <string name="sensor_temperature">temperature</string>
+    <string name="prev_btn">Prev</string>
+    <string name="xAxis">X Axis: </string>
+    <string name="yAxis">Y Axis: </string>
+    <string name="zAxis">Z Axis: </string>
+    <string name="timestampLabel">Timestamp:</string>
+    <string name="ns">(ns)</string>
+    <string name="dataLabel">dataLabel:</string>
+    <string name="cos">cos(\u0398/2):</string>
+    <string name="accuracyLabel">Accuracy:</string>
+    <string name="versionLabel">Version:</string>
+    <string name="vendorLabel">Vendor:</string>
+    <string name="resolutionLabel">Resolution:</string>
+    <string name="powerLabel">Power:</string>
+    <string name="minDelayLabel">Min Delay:</string>
+    <string name="maxRangeLabel">Max Range:</string>
+    <string name="typeLabel">Type: </string>
+    <string name="nameLabel">Name: </string>
+    <string name="hello_world">Hello world!</string>
+    <string name="config_ok">OK</string>
+    <string name="Config">Choose the item not to show</string>
+    <string name="title_activity_config">Config</string>
+    <string name="title_activity_configg">ConfiggActivity</string>
+
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Clapper/Clapper.iml" filepath="$PROJECT_DIR$/Clapper/Clapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ex/Ex.iml" filepath="$PROJECT_DIR$/Ex/Ex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LightControl/LightControl.iml" filepath="$PROJECT_DIR$/LightControl/LightControl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyApplications.iml" filepath="$PROJECT_DIR$/MyApplications.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyKnn/MyKnn.iml" filepath="$PROJECT_DIR$/MyKnn/MyKnn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OtherPipeline/OtherPipeline.iml" filepath="$PROJECT_DIR$/OtherPipeline/OtherPipeline.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProbePipeline/ProbePipeline.iml" filepath="$PROJECT_DIR$/ProbePipeline/ProbePipeline.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SensorTest/SensorTest.iml" filepath="$PROJECT_DIR$/SensorTest/SensorTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ShakeSwitch/ShakeSwitch.iml" filepath="$PROJECT_DIR$/ShakeSwitch/ShakeSwitch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ShareData/ShareData.iml" filepath="$PROJECT_DIR$/ShareData/ShareData.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TestProvider/TestProvider.iml" filepath="$PROJECT_DIR$/TestProvider/TestProvider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WiFiScanner/WiFiScanner.iml" filepath="$PROJECT_DIR$/WiFiScanner/WiFiScanner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/location/location.iml" filepath="$PROJECT_DIR$/location/location.iml" />
+    </modules>
+  </component>
+</project>
+

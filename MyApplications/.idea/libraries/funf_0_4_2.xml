@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="funf-0.4.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/WiFiScanner/libs/funf-0.4.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://D:/works/funf/funf-open-sensing-framework-v0.4.x/gen" />
+      <root url="file://D:/works/funf/funf-open-sensing-framework-v0.4.x/src" />
+      <root url="file://D:/works/funf/funf-open-sensing-framework-v0.4.x/test/gen" />
+      <root url="file://D:/works/funf/funf-open-sensing-framework-v0.4.x/test/src" />
+    </SOURCES>
+  </library>
+</component>

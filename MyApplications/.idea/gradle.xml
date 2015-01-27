@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Clapper" />
+            <option value="$PROJECT_DIR$/Ex" />
+            <option value="$PROJECT_DIR$/LightControl" />
+            <option value="$PROJECT_DIR$/MyKnn" />
+            <option value="$PROJECT_DIR$/OtherPipeline" />
+            <option value="$PROJECT_DIR$/ProbePipeline" />
+            <option value="$PROJECT_DIR$/SensorTest" />
+            <option value="$PROJECT_DIR$/ShakeSwitch" />
+            <option value="$PROJECT_DIR$/ShareData" />
+            <option value="$PROJECT_DIR$/TestProvider" />
+            <option value="$PROJECT_DIR$/WiFiScanner" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/location" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
+

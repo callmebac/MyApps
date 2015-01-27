@@ -1,0 +1,411 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:gravity="left"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/startBtn"
+        android:layout_margin="5dp"/>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/startBtn"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:id="@+id/relativeLayout"
+        android:layout_alignBottom="@+id/next_btn"
+        android:layout_toLeftOf="@+id/next_btn">
+
+        <TextView android:id="@+id/nameLabel"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentLeft="true"
+                  android:text="@string/nameLabel"
+                  android:paddingBottom="1dp"
+                  android:paddingRight="5dp"/>
+
+        <TextView android:id="@+id/name"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/nameLabel"
+                  android:layout_alignTop="@id/nameLabel"
+                  android:layout_alignBottom="@id/nameLabel"
+                  android:paddingLeft="5dp"
+                  android:paddingBottom="1dp"/>
+
+        <TextView android:id="@+id/typeLabel"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignLeft="@id/nameLabel"
+                  android:layout_below="@id/nameLabel"
+                  android:text="@string/typeLabel"
+                  android:paddingTop="1dp"
+                  android:paddingBottom="1dp"
+                  android:paddingRight="5dp"/>
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/typeLabel"
+            android:layout_alignTop="@id/typeLabel"
+            android:layout_alignBottom="@id/typeLabel"
+            android:paddingLeft="5dp"
+            android:paddingBottom="1dp"
+            android:paddingTop="1dp"/>
+
+        <TextView android:id="@+id/maxRangeLabel"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignLeft="@id/nameLabel"
+                  android:layout_below="@id/typeLabel"
+                  android:text="@string/maxRangeLabel"
+                  android:paddingRight="5dp"
+                  android:paddingTop="1dp"
+                  android:paddingBottom="1dp"/>
+
+        <TextView
+            android:id="@+id/maxRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/maxRangeLabel"
+            android:layout_alignTop="@id/maxRangeLabel"
+            android:layout_alignBottom="@id/maxRangeLabel"
+            android:paddingLeft="5dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"/>
+
+        <TextView android:id="@+id/minDelayLabel"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignLeft="@id/maxRangeLabel"
+                  android:layout_below="@id/maxRangeLabel"
+                  android:text="@string/minDelayLabel"
+                  android:paddingRight="5dp"
+                  android:paddingTop="1dp"
+                  android:paddingBottom="1dp"/>
+
+        <TextView
+            android:id="@+id/minDelay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/minDelayLabel"
+            android:layout_alignTop="@id/minDelayLabel"
+            android:layout_alignBottom="@id/minDelayLabel"
+            android:paddingLeft="5dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"/>
+
+        <TextView android:id="@+id/powerLabel"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignLeft="@id/minDelayLabel"
+                  android:layout_below="@id/minDelayLabel"
+                  android:text="@string/powerLabel"
+                  android:paddingRight="5dp"
+                  android:paddingTop="1dp"
+                  android:paddingBottom="1dp"/>
+
+        <TextView
+            android:id="@+id/power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/powerLabel"
+            android:layout_alignTop="@id/powerLabel"
+            android:layout_alignBottom="@id/powerLabel"
+            android:paddingLeft="5dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"/>
+
+        <TextView android:id="@+id/resolutionLabel"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignLeft="@id/powerLabel"
+                  android:layout_below="@id/powerLabel"
+                  android:text="@string/resolutionLabel"
+                  android:paddingRight="5dp"
+                  android:paddingTop="1dp"
+                  android:paddingBottom="1dp"/>
+
+        <TextView
+            android:id="@+id/resolution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/resolutionLabel"
+            android:layout_alignTop="@id/resolutionLabel"
+            android:layout_alignBottom="@id/resolutionLabel"
+            android:paddingLeft="5dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"/>
+
+        <TextView android:id="@+id/vendorLabel"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignLeft="@id/resolutionLabel"
+                  android:layout_below="@id/resolutionLabel"
+                  android:text="@string/vendorLabel"
+                  android:paddingRight="5dp"
+                  android:paddingTop="1dp"
+                  android:paddingBottom="1dp"/>
+
+        <TextView
+            android:id="@+id/vendor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/vendorLabel"
+            android:layout_alignTop="@id/vendorLabel"
+            android:layout_alignBottom="@id/vendorLabel"
+            android:paddingLeft="5dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"/>
+
+        <TextView android:id="@+id/versionLabel"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/versionLabel"
+                  android:layout_alignLeft="@id/vendorLabel"
+                  android:layout_below="@id/vendorLabel"
+                  android:text="@string/versionLabel"
+                  android:paddingRight="5dp"
+                  android:paddingTop="1dp"
+                  android:paddingBottom="1dp"/>
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/versionLabel"
+            android:layout_alignTop="@id/versionLabel"
+            android:layout_alignBottom="@id/versionLabel"
+            android:paddingLeft="5dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"/>
+
+        <TextView android:id="@+id/accuracyLabel"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignLeft="@id/versionLabel"
+                  android:layout_below="@id/versionLabel"
+                  android:text="@string/accuracyLabel"
+                  android:paddingRight="5dp"
+                  android:paddingTop="1dp"
+                  android:paddingBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/accuracy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/accuracyLabel"
+            android:layout_alignTop="@id/accuracyLabel"
+            android:layout_alignBottom="@id/accuracyLabel"
+            android:paddingLeft="5dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="5dp"/>
+
+        <!-- timestamp -->
+        <TextView android:id="@+id/timestampLabel"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignLeft="@id/accuracyLabel"
+                  android:layout_below="@id/accuracyLabel"
+                  android:text="@string/timestampLabel"
+                  android:visibility="gone"
+                  android:paddingRight="5dp"
+                  android:paddingTop="1dp"
+                  android:paddingBottom="1dp"/>
+
+        <TextView
+            android:id="@+id/timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/timestampLabel"
+            android:layout_alignTop="@id/timestampLabel"
+            android:layout_alignBottom="@id/timestampLabel"
+            android:visibility="gone"
+            android:paddingLeft="5dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"/>
+
+        <TextView android:id="@+id/timestampUnits"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/timestamp"
+                  android:layout_alignTop="@id/timestamp"
+                  android:layout_alignBottom="@id/timestamp"
+                  android:text="@string/ns"
+                  android:visibility="gone"
+                  android:paddingLeft="5dp"
+                  android:paddingTop="1dp"
+                  android:paddingBottom="1dp"/>
+
+        <TextView android:id="@+id/dataLabel"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignLeft="@id/accuracyLabel"
+                  android:layout_below="@id/timestampLabel"
+                  android:text="@string/dataLabel"
+                  android:visibility="gone"
+                  android:paddingRight="5dp"
+                  android:paddingTop="1dp"
+                  android:paddingBottom="1dp"/>
+
+        <TextView android:id="@+id/dataUnits"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/dataLabel"
+                  android:layout_alignTop="@id/dataLabel"
+                  android:layout_alignBottom="@id/dataLabel"
+                  android:visibility="gone"
+                  android:paddingLeft="5dp"
+                  android:paddingTop="1dp"
+                  android:paddingBottom="1dp"/>
+
+        <TextView android:id="@+id/singleValue"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/dataUnits"
+                  android:layout_alignTop="@id/dataUnits"
+                  android:layout_alignBottom="@id/dataUnits"
+                  android:visibility="gone"
+                  android:paddingRight="5dp"
+                  android:paddingTop="1dp"
+                  android:paddingBottom="1dp"/>
+
+        <!-- X axis -->
+        <TextView android:id="@+id/xAxisLabel"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignLeft="@id/dataLabel"
+                  android:layout_below="@id/dataLabel"
+                  android:paddingTop="5dp"
+                  android:paddingBottom="5dp"
+                  android:paddingRight="5dp"/>
+
+        <TextView
+            android:id="@+id/xAxis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/xAxisLabel"
+            android:layout_alignTop="@id/xAxisLabel"
+            android:layout_alignBottom="@id/xAxisLabel"
+            android:visibility="gone"
+            android:padding="5dp"/>
+
+        <!-- Y axis -->
+        <TextView android:id="@+id/yAxisLabel"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignLeft="@id/xAxisLabel"
+                  android:layout_below="@id/xAxisLabel"
+                  android:paddingTop="5dp"
+                  android:paddingRight="5dp"
+                  android:paddingBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/yAxis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/yAxisLabel"
+            android:layout_alignTop="@id/yAxisLabel"
+            android:layout_alignBottom="@id/yAxisLabel"
+            android:padding="5dp"
+            android:visibility="gone"/>
+
+        <!-- Z axis -->
+        <TextView android:id="@+id/zAxisLabel"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignLeft="@id/yAxisLabel"
+                  android:layout_below="@id/yAxisLabel"
+                  android:paddingTop="5dp"
+                  android:paddingRight="5dp"
+                  android:paddingBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/zAxis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/zAxisLabel"
+            android:layout_alignTop="@id/zAxisLabel"
+            android:layout_alignBottom="@id/zAxisLabel"
+            android:padding="5dp"
+            android:visibility="gone" />
+
+        <!-- cos value (for rotation vector only) -->
+        <TextView android:id="@+id/cosLabel"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignLeft="@id/zAxisLabel"
+                  android:layout_below="@id/zAxisLabel"
+                  android:padding="5dp"
+                  android:visibility="gone"
+                  android:text="@string/cos" />
+
+        <TextView android:id="@+id/cos"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/cosLabel"
+                  android:layout_alignTop="@id/cosLabel"
+                  android:layout_alignBottom="@id/cosLabel"
+                  android:padding="5dp"
+                  android:visibility="gone" />
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/next_btn"
+        android:text="@string/next_btn"
+        android:drawableRight="@drawable/arrow_right"
+        android:drawablePadding="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/prev_btn"
+        android:text="@string/prev_btn"
+        android:drawablePadding="4dp"
+        android:layout_alignTop="@+id/next_btn"
+        android:drawableLeft="@drawable/arrow_left"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stop"
+        android:id="@+id/stopBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/next_btn"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        android:id="@+id/startBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/prev_btn"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/config"
+        android:id="@+id/configBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/stopBtn"/>
+
+</RelativeLayout>

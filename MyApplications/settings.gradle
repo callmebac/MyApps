@@ -1,0 +1,2 @@
+include ':app', ':location', ':TestProvider', ':WiFiScanner', ':SensorTest', ':Ex', ':ShakeSwitch', ':MyKnn', 'ShareData'
+include ':ProbePipeline', ':Clapper', 'LightControl',':OtherPipeline'

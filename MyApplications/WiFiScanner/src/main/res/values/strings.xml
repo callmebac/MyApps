@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WiFi Scanner</string>
+    <string name="summary_info">Wifi Scanner periodically scans your location and surrounding wifi access points, and saves that information.</string>
+    <string name="save_btn">Save Data to SD Card</string>
+    <string name="default_pipeline">
+        {"@type":"edu.mit.media.funf.pipeline.BasicPipeline",
+         "name":"default",
+         "version":1,
+         "data":[
+            "edu.mit.media.funf.probe.builtin.WifiProbe",
+            "edu.mit.media.funf.probe.builtin.LocationProbe"
+         ]
+        }
+    </string>
+    <string name="scan_now">Scan Now</string>
+
+</resources>

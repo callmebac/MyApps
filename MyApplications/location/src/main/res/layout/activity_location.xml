@@ -1,0 +1,112 @@
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/info"/>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/textView"
+        android:id="@+id/slayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true">
+
+        <TextView android:id="@+id/latitudeLabel"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:padding="5dp"
+                  android:text="@string/latitudeLabel" />
+
+        <TextView android:id="@+id/latitude"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/latitudeLabel"
+                  android:layout_alignTop="@id/latitudeLabel"
+                  android:layout_alignBottom="@id/latitudeLabel"
+                  android:padding="5dp" />
+
+        <TextView android:id="@+id/longitudeLabel"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:padding="5dp"
+                  android:text="@string/longitudeLabel"
+                  android:layout_below="@id/latitudeLabel"/>
+
+        <TextView android:id="@+id/longitude"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/longitudeLabel"
+                  android:layout_alignTop="@id/longitudeLabel"
+                  android:layout_alignBottom="@id/longitudeLabel"
+                  android:padding="5dp" />
+
+        <TextView android:id="@+id/altitudeLabel"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:padding="5dp"
+                  android:text="@string/altitudeLabel"
+                  android:layout_below="@id/longitudeLabel"/>
+
+        <TextView android:id="@+id/altitude"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/altitudeLabel"
+                  android:layout_alignTop="@id/altitudeLabel"
+                  android:layout_alignBottom="@id/altitudeLabel"
+                  android:padding="5dp" />
+
+        <TextView android:id="@+id/timestampLabel"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:padding="5dp"
+                  android:text="@string/timestampLabel"
+                  android:layout_below="@id/altitudeLabel"/>
+
+        <TextView android:id="@+id/timestamp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_toRightOf="@id/timestampLabel"
+                  android:layout_alignTop="@id/timestampLabel"
+                  android:layout_alignBottom="@id/timestampLabel"
+                  android:padding="5dp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/s1layout"
+        android:layout_below="@id/slayout"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start"
+            android:id="@+id/startBtn"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stop"
+            android:id="@+id/stopBtn"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

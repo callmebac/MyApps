@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_vertical"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:text="@string/Config"
+        android:padding="10dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="1"
+        android:layout_weight="1">
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/nameLabel"
+            android:id="@+id/checkBox_name"
+            android:checked="false"
+            android:layout_weight="0.50"
+            />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/typeLabel"
+            android:id="@+id/checkBox_type"
+            android:checked="false"
+            android:saveEnabled="false"
+            android:layout_weight="0.50"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="1"
+        android:layout_weight="1">
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/maxRangeLabel"
+            android:id="@+id/checkBox_maxRange"
+            android:checked="false"
+            android:layout_weight="0.50"/>
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/minDelayLabel"
+            android:id="@+id/checkBox_minDelay"
+            android:checked="false"
+            android:layout_weight="0.50"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="1"
+        android:layout_weight="1">
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/powerLabel"
+            android:id="@+id/checkBox_power"
+            android:checked="false"
+            android:layout_weight="0.50"/>
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/resolutionLabel"
+            android:id="@+id/checkBox_resolution"
+            android:checked="false"
+            android:layout_weight="0.50"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="1"
+        android:layout_weight="1"
+        android:baselineAligned="false">
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/vendorLabel"
+            android:id="@+id/checkBox_vendor"
+            android:checked="false"
+            android:layout_weight="0.50"/>
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/accuracyLabel"
+            android:id="@+id/checkBox_accuracy"
+            android:checked="false"
+            android:layout_weight="0.50"/>
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/config_ok"
+        android:id="@+id/configOKBtn"
+        android:layout_gravity="center"
+        android:layout_weight="1"/>
+
+</LinearLayout>

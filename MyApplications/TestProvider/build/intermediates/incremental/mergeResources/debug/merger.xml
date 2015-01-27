@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="main" >
+        <source path="C:\AndroidProjects\MyApplications\TestProvider\res" >
+            <file
+                name="ic_launcher"
+                path="C:\AndroidProjects\MyApplications\TestProvider\res\drawable-hdpi\ic_launcher.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="C:\AndroidProjects\MyApplications\TestProvider\res\drawable-ldpi\ic_launcher.png"
+                qualifiers="ldpi-v4"
+                type="drawable" />
+            <file
+                name="ic_launcher"
+                path="C:\AndroidProjects\MyApplications\TestProvider\res\drawable-mdpi\ic_launcher.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="main"
+                path="C:\AndroidProjects\MyApplications\TestProvider\res\layout\main.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                path="C:\AndroidProjects\MyApplications\TestProvider\res\values\strings.xml"
+                qualifiers="" >
+                <string name="start" >Start Test Provider
+                </string>
+                <string name="status" >Status:
+                </string>
+                <string name="stop" >Stop Test Provider
+                </string>
+                <string name="app_name" >TestProvider
+                </string>
+            </file>
+        </source>
+        <source path="C:\AndroidProjects\MyApplications\TestProvider\build\generated\res\rs\debug" />
+        <source path="C:\AndroidProjects\MyApplications\TestProvider\build\generated\res\generated\debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="C:\AndroidProjects\MyApplications\TestProvider\build-types\debug\res" />
+    </dataSet>
+
+</merger>
