@@ -9,10 +9,8 @@ import android.util.Log;
 import com.test.myapplications.Probe.DataListener;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -32,6 +30,7 @@ public class FunfManager extends Service {
         return new LocalBinder();
     }
 
+    //为Probe注册监听器。此处使用一个Pipeline来监听probe
     public void registerPipeline(Probe probe, BasicPipeline pipeline) {
 /*        this.mLocationProbe = probe;
         this.mBasicPipeline = pipeline;
@@ -39,6 +38,7 @@ public class FunfManager extends Service {
         probe.registerListener(pipeline);
     }
 
+    //数据请求函数。将listener对具体Probe的数据请求加入dataRequests链表中
     public void requestData(DataListener listener, String probeName) {
         if (listener == null) {
             throw new IllegalArgumentException("Listener cannot be null");
@@ -66,6 +66,7 @@ public class FunfManager extends Service {
         reload();
     }
 
+    //加载所有的Pipeline。
     private void reload() {
         Set<String> pipelineNames = new HashSet<String>();
         for (String pipelineName : pipelineNames) {
@@ -92,6 +93,7 @@ public class FunfManager extends Service {
         }
     }
 
+    //数据请求信息数据结构。最简单的情况是只有一个数据监听器
     class DataRequestInfo {
         private DataListener listener;
     }
